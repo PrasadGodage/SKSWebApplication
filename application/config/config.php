@@ -35,9 +35,9 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'https://spyderindia.in';
+//$config['index_page'] = 'https://spyderindia.in';
 
-// $config['index_page'] = 'http://localhost/SKSWebApplication/';
+ $config['index_page'] = 'http://localhost:8080/SKSWebApplication/';
 
 /*
 |--------------------------------------------------------------------------
