@@ -57,3 +57,16 @@ $route['User'] = 'SoulsoftinController/getUsers';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+// Admin Routes 
+/* Admin Routes */
+$route['admin'] = 'admin/index';
+$route['admin/logout'] = "admin/logout";
+$route['admin/team'] = "admin/team/view";
+$route['admin/team/add'] = "admin/team/add";
+$route['admin/team/edit/(:any)'] = "admin/team/edit/$1";
+$route['admin/team/delete/(:any)'] = "admin/team/delete/$1";
+$route['admin/team/active/(:any)'] = "admin/team/active/$1";
+$route['admin/team/inactive/(:any)'] = "admin/team/inactive/$1";
+
