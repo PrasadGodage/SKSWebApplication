@@ -34,8 +34,8 @@
           echo "Login Successful User";
           }
           else
-          {
-            // echo "Login Error User";
+          { 
+            echo "Error git"
             redirect('Login');
           }
         }
