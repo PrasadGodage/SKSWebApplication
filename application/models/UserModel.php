@@ -35,6 +35,7 @@
           }
           else
           {
+            echo "Login Error User";
             redirect('Login');
           }
         }
