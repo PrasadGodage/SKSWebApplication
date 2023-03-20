@@ -26,16 +26,18 @@
     {
         public function login_model($username,$password)
         {
-          $q = $this->db->query("SELECT * FROM `WebCustomer` WHERE `User_Name` = '@username' AND `Password`= '@password'");
-          
+          $q = $this->db->query("SELECT * FROM `webcustomer` WHERE `User_Name` = '$username' AND `Password`= '$password'");
           $row = $q->num_rows();
-          
+                  
           if($row > 0) {
           echo "Login Successful User";
           }
           else{
-            echo "Error";
+            echo $row ;
+            echo "Error ".$username." Name".$password;
           }
         }
+
+        
     }
 ?>

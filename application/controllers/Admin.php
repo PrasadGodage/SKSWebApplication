@@ -49,6 +49,7 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/login',$page_data);
 		}
 	}
+
 	public function team($action, $id=false){
 		switch($action){
 			case "view":
@@ -136,6 +137,36 @@ class Admin extends CI_Controller {
 			break;
 		}
 	}
+	//----------------------Master Code-----------------------------------
+
+	public function master()
+	{
+	
+		// $this->load->view('admin/section/header');
+		// $this->load->view('admin/pages/Master/Master_Item');
+
+		if($this->session->userdata['admin_uid']){
+			$page_data['page_title'] = 'Master Item';
+			$page_data['page'] = 'Master/Master_Item';
+			$this->load->view('admin/index',$page_data);
+		}else{
+			$page_data['page_title'] = 'Login Admin';
+			
+			$this->load->view('admin/index',$page_data);
+		}
+	}
+	public function customer()
+	{
+		
+		// $this->load->view('admin/section/header');
+		// $this->load->view('admin/section/footer');
+
+		$this->load->view('admin/pages/Master/Master_Customer');
+		// $page_data['page'] = 'Master/Master_Customer';
+	}
+
+
+
 	public function portfolio($action='view', $id=false){
 		switch($action){
 			case "view":
@@ -319,7 +350,8 @@ class Admin extends CI_Controller {
 	}
 	public function logout(){
 		$this->session->sess_destroy();
-		redirect('admin');
+		// redirect('admin');
+		$this->load->view('admin/login');
 	}
 	public function do_upload($data){
 		$config['upload_path']          = $data['upload_path'];

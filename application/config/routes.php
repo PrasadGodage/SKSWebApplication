@@ -64,6 +64,10 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'admin/index';
 $route['admin/logout'] = "admin/logout";
 $route['admin/team'] = "admin/team/view";
+
+$route['admin/master'] = "admin/Master";
+$route['admin/customer'] = "admin/Customer";
+
 $route['admin/team/add'] = "admin/team/add";
 $route['admin/team/edit/(:any)'] = "admin/team/edit/$1";
 $route['admin/team/delete/(:any)'] = "admin/team/delete/$1";

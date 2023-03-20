@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost:8080/SKSWebApplication/';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ $config['base_url'] = '';
 */
 // $config['index_page'] = 'https://spyderindia.in';
 
-$config['index_page'] = 'http://localhost/SKSWebApplication/';
+$config['index_page'] = 'http://localhost:8080/SKSWebApplication/';
 
 /*
 |--------------------------------------------------------------------------
