@@ -33,10 +33,12 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>admin">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <!-- <div class="sidebar-brand-icon rotate-n-15">
+                
+                    <!-- <i class="fas fa-laugh-wink"></i> 
+                </div>  -->
+                <img class="img-profile rounded-circle" src="http://localhost:8080/SKSWebApplication/assets/img/sks/04.jpg" style="height: 4rem;width: 4rem;">
+                <div class="sidebar-brand-text mx-3">SKS</div>
             </a>
 
             <!-- Divider -->
@@ -54,18 +56,17 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Website
+                
             </div>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fas fa-fw fa-user"></i>
                     <span>MASTER</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Create Master:</h6>
+                    <div class="bg-white py-2 collapse-inner rounded">                        
                         <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Supplier</a>
                         <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
                         <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Customers</a>
@@ -75,7 +76,82 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item active">
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>TRANSACTION</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">                      
+                        <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Sales</a>
+                        <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Purchase</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/master">Sales Return</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>utilities-other.html">Purchase Return</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReport"
+                    aria-expanded="true" aria-controls="collapseReport">
+                    <i class="fa fa-line-chart"></i>
+                    <span>REPORTS</span>
+                </a>
+                <div id="collapseReport" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Sales</a>
+                        <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Purchase</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/master">Sales Return</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>utilities-other.html">Purchase Return</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStock"
+                    aria-expanded="true" aria-controls="collapseStock">
+                    <i class="fa fa-gears"></i>
+                    <span>STOCK</span>
+                </a>
+                <div id="collapseStock" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Sales</a>
+                        <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Purchase</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/master">Sales Return</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>utilities-other.html">Purchase Return</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccount"
+                    aria-expanded="true" aria-controls="collapseAccount">
+                    <i class="	fa fa-university"></i>
+                    <span>ACCOUNT</span>
+                </a>
+                <div id="collapseAccount" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Payment</a>
+                        <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Reciept</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/master">Ledger Report</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>utilities-other.html">Purchase Return</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/team">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Team</span></a>
@@ -84,7 +160,7 @@
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/portfolio">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Portfolio</span></a>
-            </li>
+            </li> -->
             <!-- Nav Item - Pages Collapse Menu -->
             
             
