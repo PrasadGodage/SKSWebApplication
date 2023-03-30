@@ -155,6 +155,24 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/index',$page_data);
 		}
 	}
+
+	public function Supplier()
+	{
+	
+		// $this->load->view('admin/section/header');
+		// $this->load->view('admin/pages/Master/Master_Item');
+
+		if($this->session->userdata['admin_uid']){
+			$page_data['page_title'] = 'Master Supplier';
+			$page_data['page'] = 'Master/Master_Supplier';
+			$this->load->view('admin/index',$page_data);
+		}else{
+			$page_data['page_title'] = 'Login Admin';
+			
+			$this->load->view('admin/index',$page_data);
+		}
+	}
+
 	public function customer()
 	{
 		

@@ -65,6 +65,8 @@ $route['admin'] = 'admin/index';
 $route['admin/logout'] = "admin/logout";
 $route['admin/team'] = "admin/team/view";
 
+//----------------ALL MASTER ROUTS----------------------
+$route['admin/supplier'] = "admin/Supplier";
 $route['admin/master'] = "admin/Master";
 $route['admin/customer'] = "admin/Customer";
 

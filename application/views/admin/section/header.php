@@ -67,7 +67,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">                        
-                        <a class="collapse-item" href="<?php echo base_url(); ?>MASTER/Master_Supplier.php">Supplier</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>admin/supplier">Supplier</a>
                         <!-- <a class="collapse-item" href="utilities-border.html">Customer</a> -->
                         <a class="collapse-item" href="<?php echo base_url(); ?>admin/customer">Customers</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>admin/master">Items</a>
